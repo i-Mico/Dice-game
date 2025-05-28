@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Baskerville, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgb(00FFFF);
+}
+.dice-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.players {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.players p {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.dice-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.dice-images img {
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+button:hover {
+    background-color: #0056b3;/* Darker blue on hover */
+    transform: translateY(-2px);
+}
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
+}
