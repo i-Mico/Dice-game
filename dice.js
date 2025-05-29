@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () =>
     {
     const dice1Image = document.getElementById('dice1');
     const dice2Image = document.getElementById('dice2');
-    const rollButton = document.getElementById('rollButton');
-    const editButton = document.getElementById('editButton');
+    const rollDiceButton = document.getElementById('rollDiceButton');
+    const editNamesButton = document.getElementById('editNamesButton');
     const player1NameDisplay = document.getElementById('player1Name');
     const player2NameDisplay = document.getElementById('player2Name');
     
@@ -17,9 +17,9 @@ function rollDice() {
     Math.floor(Math.random() * 6) + 1;
 
     // Update the dice images based on the random numbers
-    dice1Image.src = `images/dice${randomNumber1}.png`;
+    dice1Image.src = `images/dice-${randomNumber1}.png`;
     // example: images/dice1.png
-    dice2Image.src = `images/dice${randomNumber2}.png`;
+    dice2Image.src = `images/dice-${randomNumber2}.png`;
 
     
     // Announce the winner
@@ -43,7 +43,7 @@ function editNames() {
     }
 }
     // Update the button text
-    rollButton.addEventListener('click', rollDice);
+    rollDiceButton.addEventListener('click', rollDice);
     // Updste the edit button text
-    editButton.addEventListener('click', editNames);
+    editNamesButton.addEventListener('click', editNames);
 });
